@@ -8,7 +8,14 @@
   border: 2px solid salmon;
   border-radius: 5px;
   padding: 5px;
-  margin: 5px;
+}
+.nav ul {
+  list-style: none;
+  text-align: left;
+  padding: 0 20px;
+}
+.nav a {
+  text-decoration: none;
 }
 
 .header {
@@ -28,4 +35,14 @@
 }
 .footer {
   grid-area: footer;
+}
+
+.container {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "header  header  header  header"
+    "nav     main    main    sidebar"
+    "nav     main    main    advertise"
+    "footer  footer  footer  footer";
 }
