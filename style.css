@@ -46,3 +46,41 @@
     "nav     main    main    advertise"
     "footer  footer  footer  footer";
 }
+.advertise {
+  margin-top: 10px;
+}
+
+/* responsive design for small device */
+@media screen and (max-width: 576px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "sidebar"
+      "adversite"
+      "footer";
+  }
+  .nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .advertise {
+    margin-bottom: -10px;
+  }
+}
+
+/* responsive design for medium device */
+@media screen and (min-width: 576.02px) and (max-width: 992px) {
+  .container {
+    grid-template-areas:
+      "header     header   header"
+      "nav        nav      nav"
+      "sidebar    main     main"
+      "advertise  footer   footer";
+  }
+  .nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
